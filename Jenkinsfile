@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Step 1 ------- Packaging') {
             steps {
-              sh "mvn clean "
+              sh "mvn clean packages"
             }
         }
 		stage('Step 2 archive artifacts') {
